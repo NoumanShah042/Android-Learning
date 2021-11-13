@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="1dp">
+
+        <!-- dialNumber, toast ,showLocation , openWebPage , letsGetPro -->
+        <Button
+            android:id="@+id/dialNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dial Number" />
+
+        <Button
+            android:id="@+id/toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast" />
+
+        <Button
+            android:id="@+id/receivingData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receiving Data " />
+
+        <Button
+            android:id="@+id/showLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Location" />
+
+        <Button
+            android:id="@+id/openWebPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Web Page" />
+
+        <Button
+            android:id="@+id/viewContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Content" />
+
+        <Button
+            android:id="@+id/letsGetPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lets Get Pro" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
