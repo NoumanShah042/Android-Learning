@@ -9,18 +9,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
-
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ToastActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".UI_Widgets"
+            android:exported="true">
 
-        <activity android:name=".OtherActivity" android:exported="false" >
+        </activity>
+        <activity
+            android:name=".EditTextActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TextViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".ConstraintLayout"
+            android:exported="false" />
+        <activity
+            android:name=".RoughActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".LinearLayout2"
+            android:exported="true" />
+        <activity
+            android:name=".LinearLayout"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".OtherActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.example.androidapp.OtherActivity" />
 
