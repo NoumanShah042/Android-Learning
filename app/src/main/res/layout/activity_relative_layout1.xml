@@ -1,0 +1,137 @@
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:id="@+id/parent_rl"
+        android:text="Parent RelativeLayout"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorYellow1"
+        android:layout_below="@id/parent_rl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="Nested Horizontal"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Item "
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlue">
+
+            <TextView
+                android:text="Double Nested"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Vertical"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="LL"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout"    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nested Relative Layout"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/back_button_pressed"
+            android:text="back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+    <!--
+
+    Android RelativeLayout attributes
+    The following are the major attributes used across RelativeLayout. They lay across three different categories:
+
+    Relative To Container  _____________________
+    android:layout_alignParentBottom : Places the bottom of the element on the bottom of the container
+    android:layout_alignParentLeft : Places the left of the element on the left side of the container
+    android:layout_alignParentRight : Places the right of the element on the right side of the container
+    android:layout_alignParentTop : Places the element at the top of the container
+
+    android:layout_centerHorizontal : Centers the element horizontally within its parent container
+    android:layout_centerInParent : Centers the element both horizontally and vertically within its container
+    android:layout_centerVertical : Centers the element vertically within its parent container
+
+    Relative to Siblings   _____________________
+    android:layout_above : Places the element above the specified element
+    android:layout_below : Places the element below the specified element
+    android:layout_toLeftOf : Places the element to the left of the specified element
+    android:layout_toRightOf : Places the element to the right of the specified element
+
+    “@id/XXX” is used to reference an element by its id. One thing to remember is that referencing an element before it has been declared will produce an error so @+id/ should be used in such cases.
+
+    Alignment With Other Elements     _____________________
+    android:layout_alignBaseline : Aligns baseline of the new element with the baseline of the specified element
+    android:layout_alignBottom : Aligns the bottom of new element in with the bottom of the specified element
+    android:layout_alignLeft : Aligns left edge of the new element with the left edge of the specified element
+    android:layout_alignRight : Aligns right edge of the new element with the right edge of the specified element
+    android:layout_alignTop : Places top of the new element in alignment with the top of the specified element
+
+
+
+
+    -->

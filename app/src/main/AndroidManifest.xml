@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
         <activity
+            android:name=".RelativeLayout1"
+            android:exported="false" />
+        <activity
+            android:name=".LinearLayout3"
+            android:exported="false" />
+        <activity
             android:name=".ListViewItemDetailActivity"
             android:exported="false" />
         <activity
@@ -23,7 +29,7 @@
         </activity>
         <activity
             android:name=".DialogActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ToastActivity"
             android:exported="true" />

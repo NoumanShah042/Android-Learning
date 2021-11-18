@@ -35,7 +35,7 @@ public class ListViewActivity extends AppCompatActivity {
         editText1 = findViewById(R.id.editText1);
 
         friends = new ArrayList<String>();
-//        friends.add("Ali");
+
 //        friends.add("Humza");
 //        friends.add("Syed");
 //        friends.add("Zeeshan");
