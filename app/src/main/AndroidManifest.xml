@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidApp">
         <activity
+            android:name=".BackgroundThreads"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
             android:name=".RelativeLayout1"
             android:exported="false" />
         <activity
@@ -20,13 +31,7 @@
             android:exported="false" />
         <activity
             android:name=".ListViewActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".DialogActivity"
             android:exported="true" />
@@ -63,6 +68,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <activity
             android:name=".OtherActivity"
             android:exported="false">
@@ -72,6 +78,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

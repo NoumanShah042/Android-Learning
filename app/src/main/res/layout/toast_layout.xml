@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/colorBlue"
     android:orientation="horizontal"
     android:id="@+id/root_toast"
     android:padding="8dp">
 
-
+    <!--  showing blank because we are adding content in java file -->
     <ImageView
         android:id="@+id/toast_image"
         android:layout_width="wrap_content"

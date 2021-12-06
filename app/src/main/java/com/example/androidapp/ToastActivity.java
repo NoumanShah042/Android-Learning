@@ -34,8 +34,9 @@ public class ToastActivity extends AppCompatActivity {
         /*
         * 1) res -> right click on layout -> new -> layout resource file ( toast_layout )
         * 2) drawables ->  new -> vector asset
-        *
+
         * */
+
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.toast_layout, findViewById(R.id.root_toast));
 
